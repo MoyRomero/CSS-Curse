@@ -1,0 +1,141 @@
+@media screen and (min-width: 200px) and (max-width: 650px){
+
+	.GRID-GALERIA-CONTAINER{
+
+		grid-template-columns: repeat(auto-fill, minmax(200px, 200px)) !important;
+		grid-auto-flow: dense;
+		
+	}
+
+	.GRID-GALERIA-CONTAINER img:nth-child(16){
+
+		grid-column: 1 / span 2 ;
+		
+	}
+
+	.GRID-GALERIA-CONTAINER img:nth-child(3){
+
+		grid-row: 2 / span 2 ;
+		height: 400px;
+		
+	}
+
+	.GRID-GALERIA-CONTAINER img:nth-child(20){
+
+		grid-column: 1 / span 2 ;
+
+		
+	}
+
+
+}
+
+
+
+.GRID-GALERIA-CONTAINER{
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(20%,1fr));
+	grid-auto-rows: 1fr;
+	grid-gap: 1vw;
+	padding: 2%;
+	justify-content: center;
+	align-content: center;
+}
+
+.bodyGalery{
+	
+	background: linear-gradient(to bottom, #000, #333);
+
+}
+
+.lightbox{
+	
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	padding: 25px;
+	background: #1119;
+	position: fixed;
+	justify-content: center;
+	align-content: center;
+	top: 0;
+
+}
+
+.imgContainer{
+
+display: grid;
+grid-template-columns: 80vw;
+grid-template-rows: 80vh;
+
+}
+
+
+.imgContainer img {
+
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	box-shadow: 1px 1px 10px 1px #111;
+	background: linear-gradient(to right,#0002, #111);
+	transition-property: box-shadow;
+	transition-duration: .2s;
+
+}
+
+img:hover{
+
+
+	box-shadow: 1px 1px 20px 5px #111;
+
+}
+
+.btnCerrar{
+
+	position: absolute;
+	right: 7%;
+	top: 10%;
+	color: #fff;
+	border: 1px solid #fff !important;
+	border-radius: 100% !important;
+	text-align: center !important;
+	font-size: 2vh !important;
+	width: 5vh;
+	height: 5vh;
+	cursor: pointer;
+}
+
+
+.GRID-GALERIA-CONTAINER img{
+
+	object-fit: cover;
+	border-radius: 5px;
+	width: 100%;
+	height: 200px;
+	transition-property: box-shadow;
+	transition-duration: .5s;
+	
+	
+
+}
+
+.GRID-GALERIA-CONTAINER img:hover{
+	
+	box-shadow: 1px 1px 11px 1px #fff;
+	grid-row: 100vh;
+
+}
+
+.GRID-GALERIA-CONTAINER img:first-child{
+
+	grid-column: 1 / span 2;
+
+}
+
+.GRID-GALERIA-CONTAINER img:nth-child(3){
+
+/*grid-row: 3 / span 2;*/
+
+}
+

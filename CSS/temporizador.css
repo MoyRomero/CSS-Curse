@@ -1,0 +1,369 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Noto Serif Ahom', serif;
+	color: #fff;
+	text-shadow: 0px 0px 5px #fff;
+}
+
+header a{
+	color:#fff !important;
+}
+
+body{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #000 30%, #760606);
+
+}
+
+header{
+
+	width: 100%;
+	height: 10%;
+ 
+
+}
+
+article{
+
+	width: 100%;
+	height: 50vh;
+ 
+
+}
+
+aside{
+
+
+	width: 100%;
+	height: 30%; 
+
+}
+
+footer{
+
+	width: 100%;
+	height: 10%;
+	padding: 10px;
+	background: #0007;
+
+}
+
+
+.bckgnd{
+
+	display: grid;
+	padding: 1%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 70vw;
+	height: 100%;
+	align-content: end;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 5px #0004;
+	background: url(https://i.redd.it/ib5ru2n2us1a1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+.titulo{
+
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
+	grid-template-rows: 30% 20% 50%;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 5px 5px #0004;
+	margin: auto;
+	margin-bottom: 30px;
+	padding: 5px;
+	width: 55vw;
+	height: auto;
+	text-align: center;
+	text-justify: center;
+	backdrop-filter: blur(3px);
+
+}
+
+.titulo span{
+
+	font-size: 4vw;
+	
+	 
+}
+
+#tiempo{
+
+	display:grid;
+	padding: 5px;
+	width: 100%;
+	margin: auto;
+	font-size: 3.5vw;
+	color: #fff;
+	justify-items: center;
+	grid-column: 1/-1;
+	 
+}
+
+.titulo span:first-child{
+
+	display:grid;
+	grid-column: 1/12;
+	justify-items: end;
+
+
+}
+
+.titulo span:nth-child(2){
+
+	display:grid;
+	margin-left:10px;
+	grid-column: 12/-1;
+	justify-items: start;
+	color:#CC0B0B;
+}
+
+.titulo span:nth-child(3){
+
+	grid-column: 1/-1;
+
+}
+
+#tiempo span{
+
+	
+	border:none;
+
+}
+
+
+.asideContainer{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 2%;
+	width: 100%;
+	height: auto;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+	.asideContainer div:first-child{
+
+		width: 50%;
+		height: auto;
+		margin-top: 2%;
+		padding: 0px;
+		filter: drop-shadow(1px 5px #000);
+	}
+
+	.asideContainer div:nth-child(2){
+
+		position: relative;
+		top: 20px;
+		right: 80px;
+		width: 40%;
+		
+		animation: extranjero linear alternate 1.9s infinite;
+	}
+
+	.asideContainer div:nth-child(3){
+
+		position: relative;
+		bottom: 20px;
+
+	}
+
+
+@keyframes extranjero{
+
+	0%{
+	
+		font-size: 0vh;
+		
+	}
+	20%{
+	
+		font-size: 0vh;
+		
+	}
+	70%{
+		
+		font-size: 1.5vh;
+	
+	}
+	80%{
+		
+		font-size: 2vh;
+	}
+	100%{
+		
+		font-size: 3vh;
+	}
+
+
+}
+
+
+footer i {
+
+	margin-left: 2%;
+	font-size: 1.2em;
+}
+
+
+@media screen and (min-width:850px){
+
+	body{
+
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 10vh 80vh 10vh;
+	grid-gap: 1px;
+		
+	}
+	
+	header{
+	
+		grid-column: 1/-1;
+		grid-row: 1/2;
+		width: 100%;
+		height: 100%;	
+	}
+	
+	article{
+		 
+		grid-column: 1/6;
+		grid-row: 2/3;
+		width: 100%;
+		height: 100%;
+		padding: 5%;
+		padding-top: 0%;
+	}
+	
+	aside{
+
+		display: flex;
+		grid-column: 6/8;
+		grid-row: 2/3;		
+		width: auto;
+		height: auto;
+	
+	}
+	
+	footer{
+			 
+		grid-column: 1/-1;
+		grid-row: 3/-1;
+		width: 100%;
+		height: 100%;	
+
+	}
+
+	.bckgnd{
+
+		width: 55vw;
+
+	}
+
+	.titulo{
+		
+		grid-template-columns: repeat(15, 1fr);
+		grid-template-rows: 30% 30% 40%;	
+		height: 14vw;
+		margin-bottom: 30px;
+		width: 45vw;
+		
+	}
+
+	.titulo span:first-child{
+
+		
+		grid-column: 1/13;
+			
+	}
+	
+	.titulo span:nth-child(2){
+	
+		grid-column: 13/-1;
+		
+	}
+
+	.asideContainer{
+					
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: start;
+		position: relative;
+    	top: 20%;
+
+	}
+
+	.asideContainer div:first-child{
+
+		width: 50%;
+		height: auto;
+		margin-top: 2%;
+		padding: 0px;
+		filter: drop-shadow(1px 5px #000);
+	}
+
+	.asideContainer div:nth-child(2){
+
+		position: relative;
+		top: 20px;
+		right: 80px;
+		width: 40%;
+		
+		animation: extranjero linear alternate 1.9s infinite;
+	}
+
+	.asideContainer div:nth-child(3){
+
+		position: relative;
+		bottom: 20px;
+
+	}
+
+@keyframes extranjero{
+
+	0%{
+		
+		font-size: 0vw;
+		
+	}
+	20%{
+		
+		font-size: 0vw;
+		
+	}
+	70%{
+		
+		font-size: 1vw;
+	
+	}
+	80%{
+		
+		font-size: 1.5vw;
+	}
+	100%{
+		
+		font-size: 2vw;
+	}
+
+
+}
+	
+}

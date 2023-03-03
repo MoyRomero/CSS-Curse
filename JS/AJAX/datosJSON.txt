@@ -1,0 +1,8 @@
+
+{
+    "NOMBRE" : "MOISES",
+    "EDAD"   : "27",
+    "SIGNO"  : "GÉMINIS",
+    "COLOR"  : "NEGRO",
+    "ALTURA" : "175cm"
+}

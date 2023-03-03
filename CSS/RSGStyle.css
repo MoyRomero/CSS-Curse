@@ -1,0 +1,131 @@
+body{
+
+	display: grid;
+	height: 100vh;
+	background: #000;
+	grid-template-rows: 10vh 49.5vh 30vh 10vh;
+	grid-gap: 1px;
+}
+
+p{
+
+margin: 3vh;
+font-size: 3vh;
+transition: all .5s;
+
+}
+
+	header:hover > p,
+	article:hover > p,
+	aside:hover > p,
+	footer:hover > p{
+
+	font-size: 5vh;
+	text-shadow: 5px 5px 30px #fff;
+
+}
+
+	header{
+
+		background: linear-gradient(to bottom, #000,#111);
+		color:#eee;
+		text-shadow: 1px 1px 10px #fff;
+
+
+	}	
+
+	article{
+
+		background: linear-gradient(to bottom, #000,#111);
+		color:#eee;
+		text-shadow: 1px 1px 10px #fff;
+
+
+	}	
+	aside{
+
+		background: linear-gradient(to bottom, #000,#111);
+		color:#eee;
+		text-shadow: 1px 1px 10px #fff;
+
+
+	}	
+	footer{
+
+		background: linear-gradient(to bottom, #000,#111);
+		color:#eee;
+		text-shadow: 1px 1px 10px #fff;
+
+
+	}	
+
+
+
+@media screen and (min-width:700px){
+
+	body{
+
+	grid-template-rows: 10vh 80vh 30vh 10vh;
+		
+	}
+
+	header{
+
+		grid-column: 1/5;
+		height: 10vh;
+	}	
+
+
+	article{
+		grid-column: 1/4;
+		height: 80vh;
+
+	}	
+
+	aside{
+
+		height: 80vh;
+	
+
+	}	
+
+	footer{
+
+		grid-column: 1/5;
+		height: 9.6vh;
+
+	}
+
+	header:hover > p,
+	article:hover > p,
+	aside:hover > p,
+	footer:hover > p{
+
+	font-size: 5vh;
+	text-shadow: 5px 5px 30px #fff;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

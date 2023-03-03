@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 20px!important;
+}
+
+body{
+    
+    display: grid;
+    grid-template-rows: minmax(10vh,100%) minmax(80vh,100%) minmax(10vh,100%);
+    background: linear-gradient(to bottom, #222, #555);
+}
+
+header{
+
+    grid-row: 1/2;
+    background: #0006;    
+    
+}
+
+article{
+
+    grid-row: 2/3;    
+    
+}
+
+footer{
+    
+    grid-row: 3/4;
+    background: #0006;    
+}
+
+footer div:first-child{
+    
+    margin-left: 5px;    
+    display: flex;
+    height: 30px;
+}
+
+header a, footer a, header i, footer p{
+
+    color: #fff !important;
+    text-shadow: 0px 0px 5px;
+
+}
+
+header a:hover, footer a:hover, header i:hover{
+
+    color: #fff !important;
+    text-shadow: 0px 0px 10px;
+
+}
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    max-width: 500px;
+    min-height: 50vh;
+    height: auto;
+    font-size: 100%;
+    text-shadow: 0px 0px 15px #000;
+    background: #0004;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px;    
+
+}
+
+.formulario input{
+
+    font-size: 85%;
+    width: 100%;
+    max-width: 180px;
+    height: 20px;
+    margin: 10px;
+    
+}
+
+.formulario input[type=number]{
+
+    font-size: 85%;
+    width: 100%;
+    max-width: 170px;
+    height: 20px;
+    margin: 10px;
+    
+}
+
+.formulario button{
+
+    padding: 5px;
+    color: #fff;
+    background: #fff3;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px #0005;
+    width: auto;
+    height: 30px;   
+    margin: 10px;    
+}
+
+.formulario button:hover{
+
+    box-shadow: 0px 0px 5px 5px #0005;
+    text-shadow: 0px 0px 5px;
+    transform: scale(1.1);
+  
+}
+
+.formulario h2{
+
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 3px;
+}
+
+#inputMats{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+}
+
+#inputMats input{
+
+width: auto;
+padding: 2px;
+
+}
+#inputMats p{
+
+    color: #fff; 
+
+}
+
+@media screen and (min-width:800px){
+
+    h2{
+        font-size: 30px!important;
+    }
+    
+}

@@ -1,0 +1,166 @@
+body{
+
+    background: #921;
+
+}
+
+.reloj{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+    height: auto;
+    min-height: 10vh;
+    margin: 50px auto 50px auto;
+    padding: 10px;
+    color: #fff;
+    background-color: #0004;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px #0007;
+
+}
+
+.horas, .minutos, .segundos{
+    
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    min-height: 3vh;
+    margin: auto 5px auto 5px;
+    padding: 10px;
+    background-color: #0005;
+    border-radius: 3px;
+}
+
+.relojPared{
+
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ddd;
+    
+    box-shadow: 0px 0px 10px 1px #0007;
+
+}
+
+.relojPared span:first-child, 
+.relojPared span:nth-child(2),
+.relojPared span:nth-child(3),
+.relojPared span:nth-child(4),
+.relojPared span:nth-child(5),
+.relojPared span:nth-child(6),
+.relojPared span:nth-child(7),
+.relojPared span:nth-child(8),
+.relojPared span:nth-child(9),
+.relojPared span:nth-child(10),
+.relojPared span:nth-child(11),
+.relojPared span:last-child{ 
+
+    width: 15px;
+    height: 15px;
+    border: 1px solid #0000;
+   
+}
+
+.manecillas{
+    width: 200px;
+    display: flex;
+    border: 1px solid #fff0;
+    margin: auto;
+}
+
+.manecillas img:first-child, 
+.manecillas img:nth-child(2){
+
+    margin: auto;    
+    border: 1px solid #fff0;
+}
+
+
+.manecillas img:first-child{
+   
+    width: 165px;
+    position: relative;
+    bottom: 110px;
+    left: 20px;
+    transform: rotate(90deg);
+} 
+
+.manecillas img:nth-child(2){
+
+    width: 120px;
+    position: relative;
+    bottom: 110px;
+    right: 125px;
+    transform: rotate(0deg);
+    
+}
+
+
+
+
+.relojPared span:first-child{
+    position:relative;
+    top: 15px;
+    left: 140px;
+}
+.relojPared span:nth-child(2){
+    position:relative;
+    top: 45px;
+    left: 155px;
+}
+.relojPared span:nth-child(3){
+    position:relative;
+    top: 90px;
+    left: 155px;
+
+}
+.relojPared span:nth-child(4){
+    position:relative;
+    top: 135px;
+    left: 125px;
+}
+.relojPared span:nth-child(5){
+    position:relative;
+    top: 165px;
+    left: 80px;
+}
+.relojPared span:nth-child(6){
+    position:relative;
+    left: 20px;
+    top: 175px;
+}
+.relojPared span:nth-child(7){
+    position:relative;
+    right: 35px;
+    top: 165px;
+}
+.relojPared span:nth-child(8){
+    position:relative;
+    right: 75px;
+    top: 135px;
+}
+.relojPared span:nth-child(9){
+    position:relative;
+    top: 90px;
+    right: 105px;
+}
+.relojPared span:nth-child(10){
+    position:relative;
+    top: 50px;
+    right: 110px;
+}
+.relojPared span:nth-child(11){
+    position:relative;
+    top: 20px;
+    right: 105px;
+}
+.relojPared span:last-child{
+    position:relative;
+    right: 75px;
+    top: 5px;
+}

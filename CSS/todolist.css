@@ -1,0 +1,228 @@
+*{
+    font-family: 'Caveat', cursive;
+    font-style: italic;
+    font-size: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(10vh, 10%) minmax(80vh, 100%) minmax(10vh, 10%);
+    background:linear-gradient(to bottom, #fff 20%, #465cff);
+}
+
+header{
+
+height: 100%;
+height: 100%;
+
+}
+
+.nav{
+    background: #0004;
+}
+
+article{
+
+margin-bottom: 10%;
+height: 100%;
+
+
+}
+
+
+footer{
+
+height: 100%;
+
+
+}
+
+
+footer i, footer p{
+
+    padding-left: 2%;
+    color:#fff;
+    text-shadow: 0px 0px 10px #000;
+    transition-property: text-shadow;
+    transition-duration: .5s;
+}
+
+footer i:hover{
+
+    color:#fff;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+#cajaLista{
+
+    display: flex;
+    flex-direction: column;   
+    font-size: 150%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 2%;
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px;
+    background: #fff5;
+
+}
+
+#cajaLista img{
+
+    margin: auto;
+    margin-bottom: 10px;
+    width: 170px;
+    height: 75px;
+    filter: drop-shadow(1px 3px 5px #602f2f);
+
+}
+
+.empty{
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+#inputItem{
+
+    padding: 2%;
+    margin: 3%;
+    width: 85%;
+    height: 5vh;
+    font-size: 80%;
+    border: none;
+    box-shadow: 0px 0px 10px 1px #645b52;
+    border-radius: 5px;
+    outline: none;
+}
+
+.formUl{
+
+    display: grid;
+    width: 100%;
+    height: auto;   
+    
+}
+.formUl div:first-child{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+.formUl div:nth-child(2){
+
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+
+#cajaLista ul{ 
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px!important;
+    margin-bottom: 0px!important;
+    padding-left: 0px!important;
+    width: 100%;
+    min-height: 10vh;
+    height: auto;    
+    margin: 20px;
+}
+
+#cajaLista li{
+
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 35px;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    border-bottom: 1px solid #0005;
+    transition-property: box-shadow, transform;
+    transition-duration: 1s, .7s;
+}
+
+#cajaLista li p{
+    
+    width: 80%;
+    margin: auto;
+    text-justify: center;
+    text-align: start;
+
+}
+
+#cajaLista li:hover{
+
+    background-color: #fffa;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 1px #765d45;
+} 
+
+.Ul button{
+    border: #0004;
+    background: #fff5;
+}
+
+#btnAg{ 
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    transition-property: text-shadow;
+    transition-duration: .5s;
+}
+
+#btnAg:active{ 
+   transform: scale(1.2);
+}
+
+#btnAg:hover{
+    
+    text-shadow: 0px 0px 21px  rgba(0,0,0,0.75);
+
+}
+
+.fa-trash{
+
+    display: flex!important;
+    margin: auto!important; 
+    font-size: 30px;
+    padding: 5px;   
+    border-radius: 5px;
+    border: 1px solid #888!important;
+    background: #0001!important;
+
+}
+
+
+ @media screen and (max-width:700px){
+   
+    #cajaLista{
+
+        display: flex;
+        flex-direction: column;   
+        font-size: 150%;
+        padding: 5%;
+        margin: auto;
+        margin-top: 5%;
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 2px;
+        background: #fff5;
+    
+    }
+ }

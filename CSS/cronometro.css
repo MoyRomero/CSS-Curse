@@ -1,0 +1,173 @@
+*{
+
+	font-family: 'Quicksand', sans-serif;
+	font-style: italic;
+	margin: 0px;
+
+}
+body{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height:100%;
+	background: linear-gradient(to bottom, #fff, #34BC87);
+}
+
+header{
+
+	background: #0004;
+	padding: 1%;
+	width: 100%;
+	height: 10%;
+	text-shadow: 0px 0px 10px 10px #000 !important;
+
+}
+
+article{
+
+	display: flex;
+	flex-direction: column;	
+	padding: 1%;
+	width: 100%;
+	height: 80vh;
+}
+
+footer{
+	
+	padding: 1%;
+	width: 100%;
+	height: 10%;
+	background: #0005;
+
+}
+
+footer p {
+
+	color: #fff;
+	text-shadow: 0px 0px 2px #fff;
+
+}
+
+footer i {
+
+	color: #fff;
+	text-shadow: 0px 0px 2px #fff;
+	margin-left: 1%;
+	font-size: 2em;
+	transition-property: text-shadow;
+	transition-duration: 1s;
+}
+
+footer i:hover {
+
+	color: #fff;
+	text-shadow: 0px 0px 10px #fff;
+	margin-left: 1%;
+	font-size: 2em;
+}
+
+.descripcion{
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	cursor: wait;
+	margin-top: 3%;
+	padding: 2%;
+	width: 70%;
+	height: auto;
+	background: linear-gradient(to right, #fff5, #aaa5);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 5px #2229;
+	text-shadow: 0px 0px 10px #fff;
+
+}
+
+.cronometro{
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	margin: auto;
+	margin-top: 3%;
+	max-width: 280px;
+	max-height: 280px;
+	width: 32vw;
+	height: 32vw;
+	min-width: 230px;
+	min-height: 230px;
+	background: #fff;
+	border-radius: 100%;
+	background: linear-gradient(to bottom, #fff, 80%, palegoldenrod );
+	box-shadow: 0px 0px 0px 10px #0005;
+	justify-content: center;
+
+}
+
+.botones{
+
+	width: 80%;
+	display: flex;	
+	justify-content: space-around;
+
+}
+
+
+.tiempo {
+
+	font-family: 'Roboto Mono', monospace;
+	font-size: 6vw;
+
+}
+
+.cronometro i{
+
+	cursor: pointer;
+	font-size: 6vw;
+	transition-property: transform;
+	transition-duration: .5s;
+
+
+}
+
+.cronometro i:hover{
+
+	transform: scale(1.4);
+}
+
+.cronometro i:active{
+
+
+	transform: scale(2);
+}
+
+
+@media screen and (min-width:300px){
+
+	.tiempo,.cronometro i{
+
+		font-size: 30px;
+
+	}
+}
+
+@media screen and (min-width:510px){
+
+	.tiempo, .cronometro i{
+
+		font-size: 32px;
+
+	}
+}
+
+@media screen and (min-width:780px){
+
+	.tiempo,.cronometro i{
+
+		font-size: 35px;
+
+	}
+}

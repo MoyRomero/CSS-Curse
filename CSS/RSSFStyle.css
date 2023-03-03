@@ -1,0 +1,122 @@
+
+body{
+
+display: flex;
+flex-direction: column;
+height: 100vh;
+
+}
+
+header{
+
+background: #BE6FFB;
+height: 10vh;
+flex-basis: 100%;
+
+}
+
+
+article{
+
+background: #4859F9;
+height: 50vh;
+flex-grow: 2;
+flex-shrink: 0;
+
+}
+
+
+aside{
+
+background: #55FDC8;
+height: 30vh;
+flex-grow: 1;
+flex-shrink: 0;
+
+}
+
+
+footer{
+
+background: #FD6969;
+height: 10vh;
+flex-grow: 1;
+flex-basis: 100%;
+
+}
+
+p{
+
+	font-size: 3vh;
+	text-shadow: 5px 5px 15px #fff;
+	transition-property: font-size, text-shadow;
+	transition-duration: 1s, 1s;
+
+}
+	header:hover > p,
+	article:hover > p,
+	aside:hover > p,
+	footer:hover > p{
+
+	font-size: 5vh;
+	text-shadow: 5px 5px 30px #fff;
+
+}
+
+@media screen and (min-width:700px){
+
+body{
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+header{
+
+	flex-basis: 100%;
+	flex-grow: 1;
+	height: 10vh;
+}
+
+article,aside{
+
+	height:80vh ;
+}
+
+article{
+	
+	flex-grow: 5;
+
+}
+
+aside{
+	
+	flex-grow: 2;
+
+}
+
+footer{
+
+	flex-basis: 100%;
+	flex-grow: 1;
+	height: 10vh;
+}
+
+	header:hover > p,
+	article:hover > p,
+	aside:hover > p,
+	footer:hover > p{
+
+	font-size: 5vh;
+	text-shadow: 5px 5px 30px #fff;
+
+}
+}
+
+
+
+
+
+
+

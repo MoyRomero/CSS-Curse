@@ -1,0 +1,5 @@
+
+{
+    "APROBADOS" : "20",
+    "DESAPROBADOS" : "5"
+}
